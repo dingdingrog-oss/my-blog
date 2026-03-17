@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客 | 我的博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">我的博客</a>
+            <button class="nav-toggle" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="projects.html">作品</a></li>
+                <li><a href="blog.html" class="active">博客</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>博客</h1>
+                <p>分享技术心得，记录学习历程</p>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-layout">
+                    <div class="blog-main">
+                        <article class="blog-post">
+                            <div class="post-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <span>🚀</span>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-meta">
+                                    <span class="post-date">2024年3月15日</span>
+                                    <span class="post-tag">前端开发</span>
+                                </div>
+                                <h2><a href="#">如何构建高性能的 React 应用</a></h2>
+                                <p>在本文中，我将分享在实际项目中总结的 React 性能优化技巧，包括代码分割、懒加载、useMemo 和 useCallback 的最佳实践等...</p>
+                                <a href="#" class="read-more">阅读全文 →</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="post-thumbnail" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                <span>📚</span>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-meta">
+                                    <span class="post-date">2024年3月10日</span>
+                                    <span class="post-tag">学习笔记</span>
+                                </div>
+                                <h2><a href="#">2024年前端学习路线图</a></h2>
+                                <p>整理了一份系统的前端学习路径，从 HTML/CSS 基础到现代框架，帮助你高效地成长为一名优秀的前端工程师...</p>
+                                <a href="#" class="read-more">阅读全文 →</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="post-thumbnail" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <span>🛠️</span>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-meta">
+                                    <span class="post-date">2024年3月5日</span>
+                                    <span class="post-tag">工具推荐</span>
+                                </div>
+                                <h2><a href="#">我的开发工具箱分享</a></h2>
+                                <p>介绍提升开发效率的必备工具，包括 VS Code 插件、命令行工具、浏览器扩展等，让你的开发体验更上一层楼...</p>
+                                <a href="#" class="read-more">阅读全文 →</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="post-thumbnail" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                                <span>🎨</span>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-meta">
+                                    <span class="post-date">2024年2月28日</span>
+                                    <span class="post-tag">UI设计</span>
+                                </div>
+                                <h2><a href="#">CSS Grid 布局完全指南</a></h2>
+                                <p>CSS Grid 是现代网页布局的利器，本文通过实例详细介绍 Grid 的各种用法，让你轻松掌握二维布局...</p>
+                                <a href="#" class="read-more">阅读全文 →</a>
+                            </div>
+                        </article>
+
+                        <div class="pagination">
+                            <a href="#" class="btn btn-secondary">上一页</a>
+                            <span class="page-numbers">
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <span>...</span>
+                                <a href="#">10</a>
+                            </span>
+                            <a href="#" class="btn btn-secondary">下一页</a>
+                        </div>
+                    </div>
+
+                    <aside class="blog-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>文章分类</h3>
+                            <ul class="category-list">
+                                <li><a href="#">前端开发 <span>(15)</span></a></li>
+                                <li><a href="#">后端技术 <span>(8)</span></a></li>
+                                <li><a href="#">学习笔记 <span>(12)</span></a></li>
+                                <li><a href="#">工具推荐 <span>(6)</span></a></li>
+                                <li><a href="#">生活随笔 <span>(5)</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>热门标签</h3>
+                            <div class="tag-cloud">
+                                <a href="#" class="tag">JavaScript</a>
+                                <a href="#" class="tag">React</a>
+                                <a href="#" class="tag">CSS</a>
+                                <a href="#" class="tag">Node.js</a>
+                                <a href="#" class="tag">TypeScript</a>
+                                <a href="#" class="tag">Vue</a>
+                                <a href="#" class="tag">性能优化</a>
+                                <a href="#" class="tag">开源</a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>订阅更新</h3>
+                            <p>订阅博客，第一时间获取新文章通知</p>
+                            <form class="subscribe-form">
+                                <input type="email" placeholder="输入你的邮箱" required>
+                                <button type="submit" class="btn btn-primary">订阅</button>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">我的博客</a>
+                    <p>用代码构建未来，用文字记录成长</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">关于</a>
+                    <a href="projects.html">作品</a>
+                    <a href="blog.html">博客</a>
+                    <a href="contact.html">联系</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 我的博客. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
